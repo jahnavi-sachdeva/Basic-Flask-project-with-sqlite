@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="{{ url_for('new_student') }}">add new record</a><br>
+        <a href="{{ url_for('list') }}">Show lists</a><br>
+        <a href="{{ url_for('delete') }}">delete record</a>
+    </div>
+</header>
+<div class="container">
+      {% block content %}
+      {% endblock %}
+</div>
+</body>
+</html>
